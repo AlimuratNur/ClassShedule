@@ -1,4 +1,4 @@
-﻿namespace ClassShedule
+﻿namespace ClassShedule.MVVM.View.Window
 {
     public partial class MainPage : ContentPage
     {

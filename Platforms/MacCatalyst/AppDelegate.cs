@@ -1,4 +1,5 @@
-﻿using Foundation;
+﻿using ClassShedule.MVVM.View.Window;
+using Foundation;
 
 namespace ClassShedule
 {

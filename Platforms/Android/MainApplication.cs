@@ -1,5 +1,6 @@
 ﻿using Android.App;
 using Android.Runtime;
+using ClassShedule.MVVM.View.Window;
 
 namespace ClassShedule
 {
