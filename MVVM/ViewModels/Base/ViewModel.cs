@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace ClassShedule.MVVM.ViewModel.Base
+namespace ClassShedule.MVVM.ViewModels.Base
 {
-    internal abstract class ViewModel : INotifyPropertyChanged, IDisposable
+    public abstract class ViewModel : INotifyPropertyChanged, IDisposable
     {
         public event PropertyChangedEventHandler PropertyChanged;
         private bool _Disposed;
