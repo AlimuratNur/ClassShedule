@@ -11,6 +11,7 @@ namespace ClassShedule.MVVM.ViewModels
 
         private async void _init() 
         { 
+
         }
         
     }
