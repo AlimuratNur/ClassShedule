@@ -6,10 +6,10 @@ namespace ClassShedule.MVVM.ViewModels
     {
         public MainViewModel()
         {
-            
+            _init();
         }
 
-        private async void init() 
+        private async void _init() 
         { 
         }
         
