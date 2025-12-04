@@ -4,12 +4,24 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
-    <ScrollView>
-        <VerticalStackLayout Padding="30,0" Spacing="25">
-            <ListView>
-                
-            </ListView>
-        </VerticalStackLayout>
-    </ScrollView>
+
+    <VerticalStackLayout Padding="30,0">
+
+        <ListView ItemsSource="{Binding TodaysDaySub}">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+
+                        <StackLayout>
+                            <Label FontSize="16" Text="{Binding .}" />
+
+                        </StackLayout>
+
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+
 
 </ContentPage>
