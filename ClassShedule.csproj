@@ -70,15 +70,17 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Maui.Controls" Version="$(MauiVersion)" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.8" />
+		<PackageReference Include="Microsoft.Maui.Core" Version="10.0.11" />
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Folder Include="Data\" />
 	  <Folder Include="MVVM\Infrastructure\Commands\" />
 	  <Folder Include="MVVM\Model\" />
 	</ItemGroup>
 
 	<ItemGroup>
-	  <None Update="Data\Subjects.json">
+	  <None Update="Resources\Raw\Subjects.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>
 	</ItemGroup>
