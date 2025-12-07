@@ -19,9 +19,10 @@ namespace ClassShedule.MVVM.ViewModels
         private async void _init()
         {
 
-
+            
             var jsonReader = new JsonReader<List<string>>();
             var allDaySubjects =  await jsonReader.LoadAsync(GetPath("Subjects.json"));
+            if (!allDaySubjects.Any()) return;
             TodaysDaySub = GetDay.GetSubjects(allDaySubjects);
 
 
