@@ -1,17 +1,16 @@
 ﻿using ClassShedule.MVVM.ViewModels;
 
-namespace ClassShedule.MVVM.View.Window
+namespace ClassShedule.MVVM.View.Window;
+
+public partial class MainPage : ContentPage
 {
-    public partial class MainPage : ContentPage
+
+
+    public MainPage()
     {
-
-
-        public MainPage()
-        {
-            InitializeComponent();
-            BindingContext = new MainViewModel();
-        }
-
-
+        InitializeComponent();
+        BindingContext = new MainViewModel();
     }
+
+
 }
