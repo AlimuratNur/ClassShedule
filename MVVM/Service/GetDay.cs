@@ -4,7 +4,7 @@ namespace ClassShedule.MVVM.Service;
 
 internal static class GetDay
 {
-    public static List<string> GetSubjects(List<List<string>> allDays)
+    public static List<T> GetSubjects<T>(List<List<T>> allDays)
     {
         var dateNow = DateTime.Now.DayOfWeek;
         List<string> result;
