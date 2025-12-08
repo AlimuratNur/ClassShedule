@@ -1,13 +1,11 @@
-﻿
-
-namespace ClassShedule.MVVM.Service;
+﻿namespace ClassShedule.MVVM.Service;
 
 internal static class GetDay
 {
     public static List<T> GetSubjects<T>(List<List<T>> allDays)
     {
         var dateNow = DateTime.Now.DayOfWeek;
-        List<string> result;
+        List<T> result;
         switch (dateNow)
         {
             case DayOfWeek.Monday:
